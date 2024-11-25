@@ -1,0 +1,226 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    
+}
+
+header {
+    background-color: #4c70af;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 100px); 
+}
+
+/*--------------LOGIN------REGISTRO----------*/
+.entradaLogin, .entradaRegistro {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.loginForm h2, .registroForm h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #4c70af;
+}
+
+.loginForm label, .registroForm label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.loginForm input, .registroForm input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.loginForm button, .registroForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.loginForm button:hover, .registroForm button:hover {
+    background-color: #45a049;
+}
+
+.contenedorRegresar{
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #3ee346;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.enlace {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: fit-content;
+}
+
+.enlace:hover{
+    color: rgb(65, 133, 14)
+}
+
+
+/*---------------INDEX--------------*/
+/*--------BARRA DE BUSQUEDA---------*/
+
+.iconos{
+    width: 50px;
+    height: 50px;
+}
+.contIcono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #aba768b4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+.search-container {
+    width: 650px;
+}
+
+#toggleSearch {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+}
+
+#toggleSearch:hover {
+    background-color: #45a049;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.search-box input {
+    width: 40%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-box select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 10px;
+    overflow-y: auto;
+}
+
+.search-box button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-box button:hover {
+    background-color: #45a049;
+}
+
+.filter label {
+    font-size: 14px;
+    color: #555;
+}
+
+/*-------------CONTENEDORES-------------*/
+
+.contenedorIndice{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorMasVendidos {
+    border: 1px solid #ddd; /* Bordes opcionales */
+    padding: 10px;
+    text-align: center; /* Centrar contenido */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras opcionales */
+}
+
+.imagenProducto {
+    width: 100%; /* Imagen ocupa el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+.items {
+    display: grid; /* Activar diseño de cuadrícula */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px; /* Espaciado entre elementos */
+    max-height: 400px; /* Altura fija para habilitar scroll */
+    overflow-y: auto; /* Scroll vertical si el contenido excede */
+    padding: 20px; /* Espaciado interno */
+    width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+    margin: 0 auto; /* Centrar horizontalmente */
+    border: 1px solid #ddd; /* Borde opcional */
+    background-color: #f9f9f9; /* Fondo opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras opcionales */
+}
